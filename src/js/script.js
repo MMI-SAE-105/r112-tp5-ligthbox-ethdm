@@ -10,11 +10,21 @@ document.addEventListener('DOMContentLoaded', () => {
             img.classList.remove('expanded');
             document.body.classList.remove('expanding');
             expandedImage = null;
-  
-  
+
+
             img.src = img.dataset.thumbnail;
           } else {
   
             if (expandedImage) {
               expandedImage.classList.remove('expanded');
+              expandedImage.src = expandedImage.dataset.thumbnail; 
             }
+
+            img.src = img.dataset.fullImg;
+            img.classList.add('expanded');
+            document.body.classList.add('expanding');
+            expandedImage = img;
+          }
+        });
+      });
+
