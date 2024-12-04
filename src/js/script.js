@@ -2,3 +2,19 @@
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('ul img');
     let expandedImage = null;
+
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+          if (img === expandedImage) {
+
+            img.classList.remove('expanded');
+            document.body.classList.remove('expanding');
+            expandedImage = null;
+  
+  
+            img.src = img.dataset.thumbnail;
+          } else {
+  
+            if (expandedImage) {
+              expandedImage.classList.remove('expanded');
+            }
