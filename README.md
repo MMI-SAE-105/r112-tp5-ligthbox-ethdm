@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/OIjmcd9a)
-- nom :
-- prénom :
-- URL Netlify :
+- nom : Hennequin De Meyer
+- prénom : Ethan
+- URL Netlify : https://glittery-tanuki-d68468.netlify.app/
 
 # Travail
 
@@ -21,9 +21,9 @@ lightBox.close();
 
 # Code CSS
 
-Faire le code CSS pour la mise ne forme du dialogue (étant ouvert !).
+Faire le code CSS pour la mise en forme du dialogue (étant ouvert !).
 
-Vous devez obtenir comme la vidéo sur Moodle.
+Vous devez obtenir ce que l'on a sur la vidéo de Moodle.
 
 [::backdrop](https://developer.mozilla.org/fr/docs/Web/CSS/::backdrop) pour la mise en forme du fond.
 

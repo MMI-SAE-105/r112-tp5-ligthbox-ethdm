@@ -1,3 +1,22 @@
 /**
 * Lightbox
 */
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+
+  ul img {
+    width: flex;
+    height: flex;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
