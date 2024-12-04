@@ -2,16 +2,14 @@
 * Lightbox
 */
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 10px;
     gap: 10px;
-    align-items: left; 
   } 
   ul li {
-    display: inline-block;
+    display: flex;
   }
 
   ul img {
@@ -20,7 +18,6 @@ ul {
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    z-index: 1;
   }
   
   ul img.expanded {
@@ -33,7 +30,13 @@ ul {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
   }
 
-
-  body.expanding {
-    overflow: hidden;
+  body.expanding::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); 
   }
