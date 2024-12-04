@@ -28,3 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
 
+      document.body.addEventListener('click', (e) => {
+        if (expandedImage && !e.target.closest('ul img')) {
+          expandedImage.classList.remove('expanded');
+          document.body.classList.remove('expanding');
+          expandedImage.src = expandedImage.dataset.thumbnail;
+          expandedImage = null;
+        }
+      });
+    });
